@@ -1,0 +1,13 @@
+@mixin link-style {
+  text-decoration: underline;
+  transition: all 1s ease-out;
+}
+
+@mixin focus-hover {
+  &:hover {
+    @content;
+  }
+  &:focus {
+    @content;
+  }
+}

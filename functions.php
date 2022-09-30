@@ -87,3 +87,27 @@ function understrap_child_customize_controls_js() {
 	);
 }
 add_action( 'customize_controls_enqueue_scripts', 'understrap_child_customize_controls_js' );
+
+add_action( 'understrap_site_info', 'understrap_add_site_info' );
+if ( ! function_exists( 'understrap_add_site_info' ) ) {
+	/**
+	 * Add site info content.
+	 */
+	function understrap_add_site_info() {
+		$the_theme = wp_get_theme();
+
+		$site_info = "<a href='https://www.linkedin.com/in/mrobertsweb' target='_blank'><span class='fa fa-linkedin-square'></span></a><span>Created by Mark Roberts &copy; " . date("Y") . "</span>";
+
+		echo apply_filters( 'understrap_site_info_content', $site_info ); 
+
+	}
+}
+
+add_filter( 'comments_open', 'filter_media_comment_status', 10 , 2 );
+function filter_media_comment_status( $open, $post_id ) {
+	$post = get_post( $post_id );
+	if( $post->post_type == 'attachment' ) {
+			return false;
+	}
+	return $open;
+}

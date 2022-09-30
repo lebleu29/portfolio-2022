@@ -1,0 +1,18 @@
+nav.navbar {
+  a.navbar-brand {
+    @include link-style;
+    @include focus-hover {
+      text-decoration: none;
+    }
+  }
+  ul.navbar-nav {
+    a.nav-link {
+      color: $white;
+      
+      @include link-style;
+      @include focus-hover {
+        text-decoration: none;
+      }
+    }
+  }
+}
