@@ -11,3 +11,38 @@
     @content;
   }
 }
+
+@mixin drop-shadow {
+  filter: drop-shadow(0 0 10px rgba(0, 0, 0, .25));
+}
+
+@mixin box-shadow {
+  box-shadow: 0 0 10px rgba(0, 0, 0, .25);
+}
+
+@mixin rounded-box {
+  border-radius: 20px;
+  background: $white;
+  @include drop-shadow;
+}
+
+@mixin centered-content {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@mixin narrow-content {
+  max-width: 600px;
+  @include centered-content;
+}
+
+@mixin medium-content {
+  max-width: 900px;
+  @include centered-content;
+}
+
+@mixin wide-content {
+  max-width: 1800px;
+  @include centered-content;
+}

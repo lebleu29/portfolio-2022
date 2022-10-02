@@ -1,6 +1,11 @@
 #wrapper-footer {
   background: $primary;
   color: $white;
+  padding: 3rem 0;
+
+  @include media-breakpoint-up(lg) {
+    padding: 4rem 0;
+  }
 
   .site-info {
     display: flex;

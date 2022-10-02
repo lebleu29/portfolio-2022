@@ -1,0 +1,12 @@
+html {
+  background-image: url("../img/particles.svg");
+  background-size: contain;
+  background-repeat: repeat;
+}
+
+body {
+  max-width: 1920px;
+  margin-left: auto;
+  margin-right: auto;
+  @include box-shadow;
+}

@@ -1,0 +1,17 @@
+#archive-wrapper {
+  padding: 0;
+
+  #content {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+
+    .jetpack-portfolio {
+      h2.entry-title {
+        color: $body-color;
+        font-size: 1.3rem;
+        margin-top: 1rem;
+        // text-align: center;
+      }
+    }
+  }
+}

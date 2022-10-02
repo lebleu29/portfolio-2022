@@ -427,10 +427,10 @@ progress {
   --bs-indigo: #6610f2;
   --bs-purple: #6f42c1;
   --bs-pink: #d63384;
-  --bs-red: #dc3545;
-  --bs-orange: #fd7e14;
-  --bs-yellow: #ffc107;
-  --bs-green: #198754;
+  --bs-red: #A31616;
+  --bs-orange: #D66905;
+  --bs-yellow: #FDB82B;
+  --bs-green: #05761E;
   --bs-teal: #20c997;
   --bs-cyan: #0dcaf0;
   --bs-white: #fff;
@@ -447,18 +447,18 @@ progress {
   --bs-gray-900: #212529;
   --bs-primary: #025DA7;
   --bs-secondary: #6c757d;
-  --bs-success: #198754;
+  --bs-success: #05761E;
   --bs-info: #0dcaf0;
-  --bs-warning: #ffc107;
-  --bs-danger: #dc3545;
+  --bs-warning: #FDB82B;
+  --bs-danger: #A31616;
   --bs-light: #f8f9fa;
   --bs-dark: #212529;
   --bs-primary-rgb: 2, 93, 167;
   --bs-secondary-rgb: 108, 117, 125;
-  --bs-success-rgb: 25, 135, 84;
+  --bs-success-rgb: 5, 118, 30;
   --bs-info-rgb: 13, 202, 240;
-  --bs-warning-rgb: 255, 193, 7;
-  --bs-danger-rgb: 220, 53, 69;
+  --bs-warning-rgb: 253, 184, 43;
+  --bs-danger-rgb: 163, 22, 22;
   --bs-light-rgb: 248, 249, 250;
   --bs-dark-rgb: 33, 37, 41;
   --bs-white-rgb: 255, 255, 255;
@@ -566,15 +566,15 @@ progress {
 }
 
 .table-success {
-  --bs-table-bg: #d1e7dd;
-  --bs-table-striped-bg: #c7dbd2;
+  --bs-table-bg: #cde4d2;
+  --bs-table-striped-bg: #c3d9c8;
   --bs-table-striped-color: #000;
-  --bs-table-active-bg: #bcd0c7;
+  --bs-table-active-bg: #b9cdbd;
   --bs-table-active-color: #000;
-  --bs-table-hover-bg: #c1d6cc;
+  --bs-table-hover-bg: #bed3c2;
   --bs-table-hover-color: #000;
   color: #000;
-  border-color: #bcd0c7;
+  border-color: #b9cdbd;
 }
 
 .table-info {
@@ -590,27 +590,27 @@ progress {
 }
 
 .table-warning {
-  --bs-table-bg: #fff3cd;
-  --bs-table-striped-bg: #f2e7c3;
+  --bs-table-bg: #fff1d5;
+  --bs-table-striped-bg: #f2e5ca;
   --bs-table-striped-color: #000;
-  --bs-table-active-bg: #e6dbb9;
+  --bs-table-active-bg: #e6d9c0;
   --bs-table-active-color: #000;
-  --bs-table-hover-bg: #ece1be;
+  --bs-table-hover-bg: #ecdfc5;
   --bs-table-hover-color: #000;
   color: #000;
-  border-color: #e6dbb9;
+  border-color: #e6d9c0;
 }
 
 .table-danger {
-  --bs-table-bg: #f8d7da;
-  --bs-table-striped-bg: #eccccf;
+  --bs-table-bg: #edd0d0;
+  --bs-table-striped-bg: #e1c6c6;
   --bs-table-striped-color: #000;
-  --bs-table-active-bg: #dfc2c4;
+  --bs-table-active-bg: #d5bbbb;
   --bs-table-active-color: #000;
-  --bs-table-hover-bg: #e5c7ca;
+  --bs-table-hover-bg: #dbc0c0;
   --bs-table-hover-color: #000;
   color: #000;
-  border-color: #dfc2c4;
+  border-color: #d5bbbb;
 }
 
 .table-light {
@@ -853,42 +853,42 @@ progress {
 
 .has-red-color,
 .has-red-color:visited {
-  color: #dc3545;
+  color: #A31616;
 }
 
 .has-red-background-color {
-  background-color: #dc3545;
-  border-color: #dc3545;
+  background-color: #A31616;
+  border-color: #A31616;
 }
 
 .has-orange-color,
 .has-orange-color:visited {
-  color: #fd7e14;
+  color: #D66905;
 }
 
 .has-orange-background-color {
-  background-color: #fd7e14;
-  border-color: #fd7e14;
+  background-color: #D66905;
+  border-color: #D66905;
 }
 
 .has-yellow-color,
 .has-yellow-color:visited {
-  color: #ffc107;
+  color: #FDB82B;
 }
 
 .has-yellow-background-color {
-  background-color: #ffc107;
-  border-color: #ffc107;
+  background-color: #FDB82B;
+  border-color: #FDB82B;
 }
 
 .has-green-color,
 .has-green-color:visited {
-  color: #198754;
+  color: #05761E;
 }
 
 .has-green-background-color {
-  background-color: #198754;
-  border-color: #198754;
+  background-color: #05761E;
+  border-color: #05761E;
 }
 
 .has-teal-color,
@@ -963,12 +963,12 @@ progress {
 
 .has-success-color,
 .has-success-color:visited {
-  color: #198754;
+  color: #05761E;
 }
 
 .has-success-background-color {
-  background-color: #198754;
-  border-color: #198754;
+  background-color: #05761E;
+  border-color: #05761E;
 }
 
 .has-info-color,
@@ -983,22 +983,22 @@ progress {
 
 .has-warning-color,
 .has-warning-color:visited {
-  color: #ffc107;
+  color: #FDB82B;
 }
 
 .has-warning-background-color {
-  background-color: #ffc107;
-  border-color: #ffc107;
+  background-color: #FDB82B;
+  border-color: #FDB82B;
 }
 
 .has-danger-color,
 .has-danger-color:visited {
-  color: #dc3545;
+  color: #A31616;
 }
 
 .has-danger-background-color {
-  background-color: #dc3545;
-  border-color: #dc3545;
+  background-color: #A31616;
+  border-color: #A31616;
 }
 
 .has-light-color,
