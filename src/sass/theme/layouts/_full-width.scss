@@ -1,0 +1,33 @@
+body.page-template-fullwidthpage {
+  #full-width-page-wrapper {
+    padding: 0;
+
+    #content {
+      padding-top: 3rem;
+      padding-bottom: 5rem;
+
+      .entry-header {
+        padding-bottom: 2rem;
+      }
+
+      .entry-content {
+
+        h2 {
+          margin-bottom: 1.5rem;
+        }
+
+        p {
+          + ul {
+            margin-top: -.5rem;
+          }
+        }
+
+        ul {
+          + p {
+            margin-top: 1.5rem;
+          }
+        }
+      }
+    }
+  }
+}

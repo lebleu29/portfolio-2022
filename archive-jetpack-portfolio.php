@@ -28,7 +28,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 				<h1 class="page-title">My portfolio</h1>
 				<p>Here is a collection of web design and development work I've done over the years.</p>
 			</header><!-- .page-header -->
-			<div class='row g-5'>
+			<div class='row g-3 g-md-5'>
 			<?php
 			// Start the loop.
 			while ( have_posts() ) {

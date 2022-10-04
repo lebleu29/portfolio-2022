@@ -15596,20 +15596,19 @@ Files inside this folder should contain all styles relating to a reusable compon
   border-radius: 20px;
   background: #fff;
   filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.25));
-  overflow: hidden;
 }
-
-a.portfolio-link .bubble--portfolio {
+.bubble.bubble--portfolio {
   transition: all 0.1s ease-in;
 }
-a.portfolio-link .bubble--portfolio figure {
+.bubble.bubble--portfolio figure {
   margin: 0;
 }
-a.portfolio-link .bubble--portfolio figure img {
+.bubble.bubble--portfolio figure img {
   border: 12px solid #fff;
   border-radius: 20px;
   transition: all 0.1s ease-in-out;
 }
+
 a.portfolio-link:hover .bubble--portfolio, a.portfolio-link:focus .bubble--portfolio, a.portfolio-link:active .bubble--portfolio {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
 }
@@ -15623,6 +15622,7 @@ This file is used to contain all component imports.
 Files inside this folder can contain specific element styles and layout. 
 */
 nav.navbar a.navbar-brand {
+  font-size: 1rem;
   text-decoration: underline;
   transition: all 1s ease-out;
 }
@@ -15899,7 +15899,7 @@ body.home section.get-in-touch p {
 body.home section.get-in-touch form.container {
   padding-top: 1rem;
   padding-bottom: 1rem;
-  max-width: 900px;
+  max-width: 700px;
   display: block;
   margin-right: auto;
   margin-left: auto;
@@ -15941,13 +15941,215 @@ body {
   padding: 0;
 }
 #archive-wrapper #content {
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
-#archive-wrapper #content .jetpack-portfolio h2.entry-title, #archive-wrapper #content .jetpack-portfolio .entry-title.h2 {
+@media (min-width: 768px) {
+  #archive-wrapper #content {
+    padding-top: 3rem;
+    padding-bottom: 5rem;
+  }
+}
+#archive-wrapper #content header.page-header {
+  margin-bottom: 2rem;
+}
+@media (min-width: 768px) {
+  #archive-wrapper #content header.page-header {
+    margin-bottom: 3rem;
+  }
+}
+#archive-wrapper #content a.portfolio-link {
+  text-decoration: none;
+}
+#archive-wrapper #content a.portfolio-link .jetpack-portfolio img {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  border-bottom-width: 0;
+}
+#archive-wrapper #content a.portfolio-link .jetpack-portfolio .entry {
+  border: 12px solid #fff;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-top-width: 0;
+  background-color: #f1f2f3;
+  padding: 1rem;
+}
+@media (min-width: 992px) {
+  #archive-wrapper #content a.portfolio-link .jetpack-portfolio .entry {
+    padding: 1.5rem;
+  }
+}
+@media (min-width: 1200px) {
+  #archive-wrapper #content a.portfolio-link .jetpack-portfolio .entry {
+    padding: 2rem;
+  }
+}
+#archive-wrapper #content a.portfolio-link .jetpack-portfolio .entry header.entry-header h2.entry-title, #archive-wrapper #content a.portfolio-link .jetpack-portfolio .entry header.entry-header .entry-title.h2 {
   color: #212529;
   font-size: 1.3rem;
+  margin: 0;
+  text-decoration: underline;
+  transition: all 0.1s ease-out;
+}
+#archive-wrapper #content a.portfolio-link .jetpack-portfolio .entry .entry-content p {
   margin-top: 1rem;
+  margin-bottom: 0;
+  color: #212529;
+}
+#archive-wrapper #content a.portfolio-link:hover .bubble--portfolio, #archive-wrapper #content a.portfolio-link:focus .bubble--portfolio, #archive-wrapper #content a.portfolio-link:active .bubble--portfolio {
+  transform: scale(1.005);
+}
+#archive-wrapper #content a.portfolio-link:hover .bubble--portfolio img, #archive-wrapper #content a.portfolio-link:focus .bubble--portfolio img, #archive-wrapper #content a.portfolio-link:active .bubble--portfolio img {
+  transform: none;
+}
+#archive-wrapper #content a.portfolio-link:hover .bubble--portfolio header.entry-header h2.entry-title, #archive-wrapper #content a.portfolio-link:hover .bubble--portfolio header.entry-header .entry-title.h2, #archive-wrapper #content a.portfolio-link:focus .bubble--portfolio header.entry-header h2.entry-title, #archive-wrapper #content a.portfolio-link:focus .bubble--portfolio header.entry-header .entry-title.h2, #archive-wrapper #content a.portfolio-link:active .bubble--portfolio header.entry-header h2.entry-title, #archive-wrapper #content a.portfolio-link:active .bubble--portfolio header.entry-header .entry-title.h2 {
+  text-decoration: none;
+}
+#archive-wrapper ul.pagination {
+  margin-top: 3rem;
+}
+@media (min-width: 992px) {
+  #archive-wrapper ul.pagination {
+    margin-top: 5rem;
+  }
+}
+
+body.single-jetpack-portfolio #single-wrapper {
+  padding-top: 0;
+  padding-bottom: 2rem;
+}
+@media (min-width: 768px) {
+  body.single-jetpack-portfolio #single-wrapper {
+    padding-bottom: 5rem;
+  }
+}
+body.single-jetpack-portfolio #single-wrapper header.entry-header {
+  background-color: #025DA7;
+  padding: 3rem 0 2rem;
+}
+@media (min-width: 768px) {
+  body.single-jetpack-portfolio #single-wrapper header.entry-header {
+    padding: 4rem 0 2rem;
+  }
+}
+@media (min-width: 992px) {
+  body.single-jetpack-portfolio #single-wrapper header.entry-header {
+    padding: 5rem 0 3rem;
+  }
+}
+body.single-jetpack-portfolio #single-wrapper header.entry-header h1.entry-title, body.single-jetpack-portfolio #single-wrapper header.entry-header .entry-title.h1 {
+  margin: 0;
+  color: #fff;
+}
+@media (min-width: 992px) {
+  body.single-jetpack-portfolio #single-wrapper header.entry-header h1.entry-title, body.single-jetpack-portfolio #single-wrapper header.entry-header .entry-title.h1 {
+    font-size: 3rem;
+  }
+}
+@media (min-width: 1200px) {
+  body.single-jetpack-portfolio #single-wrapper header.entry-header h1.entry-title, body.single-jetpack-portfolio #single-wrapper header.entry-header .entry-title.h1 {
+    font-size: 3.4rem;
+    text-align: center;
+  }
+}
+body.single-jetpack-portfolio #single-wrapper header.entry-header p {
+  color: #fff;
+  margin-bottom: 1rem;
+}
+@media (min-width: 768px) {
+  body.single-jetpack-portfolio #single-wrapper header.entry-header p {
+    margin-bottom: 0;
+  }
+}
+@media (min-width: 768px) {
+  body.single-jetpack-portfolio #single-wrapper header.entry-header div.col-md-6 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+}
+@media (min-width: 1200px) {
+  body.single-jetpack-portfolio #single-wrapper header.entry-header div.col-md-6 {
+    justify-content: center;
+  }
+}
+body.single-jetpack-portfolio #single-wrapper header.entry-header div.col-md-6 .bubble {
+  margin-bottom: -10rem;
+}
+@media (min-width: 768px) {
+  body.single-jetpack-portfolio #single-wrapper header.entry-header div.col-md-6 .bubble {
+    margin-bottom: 0;
+  }
+}
+body.single-jetpack-portfolio #single-wrapper header.entry-header div.col-md-6 .bubble figure {
+  margin: 0;
+}
+body.single-jetpack-portfolio #single-wrapper header.entry-header div.col-md-6 .bubble figure img {
+  border: 12px solid #fff;
+  border-radius: 20px;
+}
+body.single-jetpack-portfolio #single-wrapper .entry-content {
+  padding-top: 2rem;
+}
+@media (min-width: 768px) {
+  body.single-jetpack-portfolio #single-wrapper .entry-content {
+    padding-top: 3rem;
+    padding-bottom: 5rem;
+  }
+}
+@media (min-width: 992px) {
+  body.single-jetpack-portfolio #single-wrapper .entry-content .container {
+    max-width: 960px;
+  }
+}
+body.single-jetpack-portfolio #single-wrapper .entry-content .container figure.wp-block-gallery {
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  padding: 1rem;
+  border: 12px solid #fff;
+  background-image: url("../img/waves.svg");
+  background-size: cover;
+}
+@media (min-width: 768px) {
+  body.single-jetpack-portfolio #single-wrapper .entry-content .container figure.wp-block-gallery {
+    padding: 2rem;
+  }
+}
+@media (min-width: 992px) {
+  body.single-jetpack-portfolio #single-wrapper .entry-content .container figure.wp-block-gallery {
+    padding: 3rem;
+  }
+}
+body.single-jetpack-portfolio #single-wrapper .entry-content .container figure.wp-block-gallery img {
+  filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.25));
+}
+body.single-jetpack-portfolio #single-wrapper .entry-content .container p + h2, body.single-jetpack-portfolio #single-wrapper .entry-content .container p + .h2 {
+  margin-top: 2rem;
+}
+body.single-jetpack-portfolio #single-wrapper nav.post-navigation {
+  margin-top: 3rem;
+}
+
+body.page-template-fullwidthpage #full-width-page-wrapper {
+  padding: 0;
+}
+body.page-template-fullwidthpage #full-width-page-wrapper #content {
+  padding-top: 3rem;
+  padding-bottom: 5rem;
+}
+body.page-template-fullwidthpage #full-width-page-wrapper #content .entry-header {
+  padding-bottom: 2rem;
+}
+body.page-template-fullwidthpage #full-width-page-wrapper #content .entry-content h2, body.page-template-fullwidthpage #full-width-page-wrapper #content .entry-content .h2 {
+  margin-bottom: 1.5rem;
+}
+body.page-template-fullwidthpage #full-width-page-wrapper #content .entry-content p + ul {
+  margin-top: -0.5rem;
+}
+body.page-template-fullwidthpage #full-width-page-wrapper #content .entry-content ul + p {
+  margin-top: 1.5rem;
 }
 
 .has-blue-color,

@@ -9,8 +9,9 @@ get_header(); ?>
   <section class="hello">
     <h2>Hello, I'm Mark.</h2>
     <div class="container">
-      <p>I'm a freelance designer/developer based in Sechelt, which is on the beautiful Sunshine Coast in British Columbia, Canada.</p>
-      <p>I am highly experienced in designing and developing custom WordPress websites. I love what I do!</p>
+      <p>I'm a freelance designer/developer based in Sechelt, on the beautiful Sunshine Coast in British Columbia, Canada.</p>
+      <p>Formerly a developer at both Thompson Rivers University and Athabasca University, I am highly experienced in designing and developing custom websites.</p>
+      <p>Get in touch with me for any project ideas. I'd love to work with you!</p>
     </div>
   </section>
 
@@ -45,7 +46,7 @@ get_header(); ?>
       </div>
       <div class="row">
         <div class="col col--button mt-4 mt-md-5">
-          <a href="/contact" class="btn btn-primary btn-lg" role="button">Contact me</a>
+          <a href="#contact" class="btn btn-primary btn-lg" role="button">Contact me</a>
         </div>
         <div class="col col--button mt-4 mt-md-5">
           <a href="/resume" class="btn btn-primary btn-lg" role="button">View my resume</a>
@@ -86,7 +87,7 @@ get_header(); ?>
     <a href="/portfolio" class="btn btn-primary btn-lg" role="button">View my portfolio</a>
   </section>
 
-  <section class="get-in-touch">
+  <section id="contact" class="get-in-touch">
     <h2>Get in touch</h2>
     <p>Have a problem that needs solving?</p>
 

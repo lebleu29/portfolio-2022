@@ -9,50 +9,38 @@
 defined( 'ABSPATH' ) || exit;
 ?>
 
-<div class="col-6">
+<div class="col-md-6">
 
-		<article <?php post_class(""); ?> id="post-<?php the_ID(); ?>">
+	<a class="portfolio-link" href="<?php esc_url( the_permalink() ); ?>">
 
-			<a class="portfolio-link" href="<?php esc_url( the_permalink() ); ?>">
+		<article <?php post_class("bubble bubble--portfolio"); ?> id="post-<?php the_ID(); ?>">
 
-				<div class="bubble bubble--portfolio">
-			
-						<figure>
-							<?php echo get_the_post_thumbnail( $post->ID, 'large' ); ?>
-						</figure>
+			<figure>
+				<?php echo get_the_post_thumbnail( $post->ID, 'large' ); ?>
+			</figure>
 
-				</div>
+			<div class="entry">
 
-			</a>
-
-			<header class="entry-header">
-
-				<a href="<?php esc_url( the_permalink() ); ?>">
+				<header class="entry-header">
 
 					<h2 class="entry-title"><?php the_title(); ?></h2>
 
-				</a>
+				</header><!-- .entry-header -->
 
-				<?php if ( 'post' === get_post_type() ) : ?>
+				<div class="entry-content">
 
-					<div class="entry-meta">
-						<?php understrap_posted_on(); ?>
-					</div><!-- .entry-meta -->
+					<?php
+					the_excerpt();
+					//understrap_link_pages();
+					?>
 
-				<?php endif; ?>
+				</div><!-- .entry-content -->
 
-			</header><!-- .entry-header -->
-
-			<div class="entry-content">
-
-				<?php
-				the_excerpt();
-				//understrap_link_pages();
-				?>
-
-			</div><!-- .entry-content -->
+			</div>
 		
 		</article><!-- #post-## -->
+
+	</a>
 
 </div>
 
