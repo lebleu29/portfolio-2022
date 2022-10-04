@@ -25,6 +25,11 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 				<footer class="site-footer" id="colophon">
 
+					<div class="return-to-top">
+						<span class="fa fa-3x fa-angle-up"></span>
+						<p>Return to top of page</p>
+					</div>
+
 					<div class="site-info">
 
 						<?php understrap_site_info(); ?>

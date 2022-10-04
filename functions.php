@@ -96,7 +96,7 @@ if ( ! function_exists( 'understrap_add_site_info' ) ) {
 	function understrap_add_site_info() {
 		$the_theme = wp_get_theme();
 
-		$site_info = "<a href='https://www.linkedin.com/in/mrobertsweb' target='_blank'><span class='fa fa-linkedin-square'></span></a><span>Created by Mark Roberts &copy; " . date("Y") . "</span>";
+		$site_info = "<span>Mark Roberts &copy; " . date("Y") . "</span>";
 
 		echo apply_filters( 'understrap_site_info_content', $site_info ); 
 
@@ -113,25 +113,6 @@ function filter_media_comment_status( $open, $post_id ) {
 }
 
 add_filter( 'wp_trim_excerpt', 'understrap_all_excerpts_get_more_link' );
-
-// if ( ! function_exists( 'understrap_all_excerpts_get_more_link' ) ) {
-// 	/**
-// 	 * Adds a custom read more link to all excerpts, manually or automatically generated
-// 	 *
-// 	 * @param string $post_excerpt Posts's excerpt.
-// 	 *
-// 	 * @return string
-// 	 */
-// 	function understrap_all_excerpts_get_more_link( $post_excerpt ) {
-// 		if ( ! is_admin() ) {
-// 			$post_excerpt = $post_excerpt . ' [...]<p><a class="btn btn-primary btn-lg understrap-read-more-link" href="' . esc_url( get_permalink( get_the_ID() ) ) . '">' . __(
-// 				'View project',
-// 				'understrap'
-// 			) . '<span class="screen-reader-text"> from ' . get_the_title( get_the_ID() ) . '</span></a></p>';
-// 		}
-// 		return $post_excerpt;
-// 	}
-// }
 
 if ( ! function_exists( 'understrap_all_excerpts_get_more_link' ) ) {
 	/**

@@ -10033,9 +10033,7 @@
 	  }), H(), H;
 	}();
 
-	ScrollReveal().reveal('.skills-services', {
-	  delay: 1500
-	});
+	ScrollReveal().reveal('.skills-services');
 
 	exports.Alert = alert;
 	exports.Button = button;

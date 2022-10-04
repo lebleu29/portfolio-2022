@@ -98,14 +98,14 @@ get_header(); ?>
         $message = $_POST['get-in-touch-message'];
 
         $subject = "New form submission on mrobertsweb.ca";
-        $email_body = "You have received a new message from $name.\n";
-        "Here is the message:\n $message"; 
+        $email_body = "You have received a new message from " . $name . ".\n";
+        "Here is the message:" . "\n" . $message; 
 
         $to = "markaaronroberts@icloud.com";
 
-        $headers = "From: $name \r\n";
+        $headers = "From: " . $name . "\r\n";
 
-        $headers .= "Reply-To: $email \r\n";
+        $headers .= "Reply-To: " . $email . "\r\n";
 
         mail($to,$subject,$email_body,$headers);
 
@@ -120,19 +120,19 @@ get_header(); ?>
                 <div class="col-md-6">
                     <div class="mb-3">
                         <label for="get-in-touch-name" class="form-label">Name</label>
-                        <input type="text" class="form-control" id="get-in-touch-name" placeholder="John Smith">
+                        <input type="text" class="form-control" id="get-in-touch-name" name="get-in-touch-name" placeholder="John Smith">
                     </div>
                 </div>
                 <div class="col-md-6">
                     <div class="mb-3">
                         <label for="get-in-touch-email" class="form-label">Email address</label>
-                        <input type="email" class="form-control" id="get-in-touch-email" placeholder="name@example.com">
+                        <input type="email" class="form-control" id="get-in-touch-email" name="get-in-touch-email" placeholder="name@example.com">
                     </div>
                 </div>
             </div>
             <div class="mb-3 mt-md-3">
                 <label for="get-in-touch-message" class="form-label">Message</label>
-                <textarea class="form-control" id="get-in-touch-message" rows="3"></textarea>
+                <textarea class="form-control" id="get-in-touch-message" name="get-in-touch-message" rows="6"></textarea>
             </div>
             <button class="btn btn-primary btn-lg" type="submit" name="get-in-touch-submit">Submit</button>
         </form>

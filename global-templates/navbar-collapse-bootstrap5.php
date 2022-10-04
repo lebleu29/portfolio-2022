@@ -41,6 +41,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 		);
 		?>
 
+		<a class="linkedin" href='https://www.linkedin.com/in/mrobertsweb' target='_blank'><span class='fa fa-linkedin-square' aria-hidden="true"></span><span class="visually-hidden">LinkedIn</span></a>
+
 	</div><!-- .container(-fluid) -->
 
 </nav><!-- .site-navigation -->

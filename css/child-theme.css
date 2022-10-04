@@ -15643,6 +15643,21 @@ nav.navbar ul.navbar-nav a.nav-link:hover {
 nav.navbar ul.navbar-nav a.nav-link:focus {
   text-decoration: none;
 }
+nav.navbar a.linkedin {
+  display: none;
+}
+@media (min-width: 768px) {
+  nav.navbar a.linkedin {
+    display: block;
+    padding-left: 0.5rem;
+  }
+  nav.navbar a.linkedin span {
+    color: #fff;
+    font-size: 1.4rem;
+    position: relative;
+    top: 2px;
+  }
+}
 
 #wrapper-footer {
   background: #025DA7;
@@ -15654,6 +15669,11 @@ nav.navbar ul.navbar-nav a.nav-link:focus {
     padding: 4rem 0;
   }
 }
+#wrapper-footer .return-to-top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 #wrapper-footer .site-info {
   display: flex;
   flex-direction: column;
@@ -15662,6 +15682,9 @@ nav.navbar ul.navbar-nav a.nav-link:focus {
 }
 #wrapper-footer .site-info a {
   color: #fff;
+}
+#wrapper-footer .site-info a + span {
+  font-size: 0.85rem;
 }
 #wrapper-footer .site-info span.fa {
   font-size: 2.5rem;
@@ -15892,6 +15915,9 @@ body.home section.recent-work .container a.portfolio-link h3, body.home section.
 }
 body.home section.recent-work .btn, body.home section.recent-work .wpcf7 input[type=submit], .wpcf7 body.home section.recent-work input[type=submit] {
   margin-top: 3rem;
+}
+body.home section.get-in-touch {
+  padding-bottom: 5rem;
 }
 body.home section.get-in-touch p {
   text-align: center;
