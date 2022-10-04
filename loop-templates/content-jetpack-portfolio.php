@@ -13,7 +13,7 @@ defined( 'ABSPATH' ) || exit;
 
 	<a class="portfolio-link" href="<?php esc_url( the_permalink() ); ?>">
 
-		<article <?php post_class("bubble bubble--portfolio"); ?> id="post-<?php the_ID(); ?>">
+		<article <?php post_class("bubble bubble--portfolio reveal"); ?> id="post-<?php the_ID(); ?>">
 
 			<figure>
 				<?php echo get_the_post_thumbnail( $post->ID, 'large' ); ?>

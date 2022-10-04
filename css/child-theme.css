@@ -15590,6 +15590,7 @@ Files inside this folder should contain all styles relating to a reusable compon
 .btn, .wpcf7 input[type=submit] {
   border-radius: 50px;
   min-width: 240px;
+  width: auto;
 }
 
 .bubble {
@@ -15662,32 +15663,19 @@ nav.navbar a.linkedin {
 #wrapper-footer {
   background: #025DA7;
   color: #fff;
-  padding: 3rem 0;
-}
-@media (min-width: 992px) {
-  #wrapper-footer {
-    padding: 4rem 0;
-  }
+  padding: 2rem 0;
 }
 #wrapper-footer .return-to-top {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-#wrapper-footer .site-info {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1rem;
-}
-#wrapper-footer .site-info a {
+#wrapper-footer .return-to-top a {
   color: #fff;
 }
-#wrapper-footer .site-info a + span {
-  font-size: 0.85rem;
-}
-#wrapper-footer .site-info span.fa {
-  font-size: 2.5rem;
+#wrapper-footer .site-info {
+  padding-top: 4rem;
+  text-align: center;
 }
 
 header .hero-content {
@@ -15919,41 +15907,63 @@ body.home section.recent-work .btn, body.home section.recent-work .wpcf7 input[t
 body.home section.get-in-touch {
   padding-bottom: 5rem;
 }
+@media (min-width: 992px) {
+  body.home section.get-in-touch {
+    padding-bottom: 10rem;
+  }
+}
 body.home section.get-in-touch p {
   text-align: center;
 }
-body.home section.get-in-touch form.container {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+body.home section.get-in-touch p.thankyou {
+  color: #05761E;
+}
+body.home section.get-in-touch form.wpcf7-form {
+  padding-left: 1rem;
+  padding-right: 1rem;
   max-width: 700px;
   display: block;
   margin-right: auto;
   margin-left: auto;
 }
-@media (min-width: 992px) {
-  body.home section.get-in-touch form.container {
-    padding-top: 3rem;
-  }
+body.home section.get-in-touch form.wpcf7-form p:first-of-type {
+  margin-bottom: 3rem;
 }
-body.home section.get-in-touch form.container label {
-  font-weight: 700;
+body.home section.get-in-touch form.wpcf7-form label {
+  text-align: left;
+  font-size: 1rem;
 }
-body.home section.get-in-touch form.container button {
+body.home section.get-in-touch form.wpcf7-form span.wpcf7-form-control-wrap {
+  margin-top: 0.25rem;
+  display: block;
+}
+body.home section.get-in-touch form.wpcf7-form span.wpcf7-form-control-wrap .wpcf7-not-valid-tip {
+  padding-top: 0.25rem;
+}
+body.home section.get-in-touch form.wpcf7-form input.btn, body.home section.get-in-touch form.wpcf7-form .wpcf7 input[type=submit], .wpcf7 body.home section.get-in-touch form.wpcf7-form input[type=submit] {
+  padding: 0.5rem 1rem;
+  font-size: 1.25rem;
+  background-color: #025DA7;
+  border: none;
+  color: #fff;
   margin-top: 2rem;
   display: block;
   margin-right: auto;
   margin-left: auto;
 }
+body.home section.get-in-touch form.wpcf7-form input.btn:hover, body.home section.get-in-touch form.wpcf7-form .wpcf7 input[type=submit]:hover, .wpcf7 body.home section.get-in-touch form.wpcf7-form input[type=submit]:hover {
+  color: #fff;
+  background-color: #024f8e;
+  border-color: #024a86;
+}
 @media (min-width: 992px) {
-  body.home section.get-in-touch form.container button {
+  body.home section.get-in-touch form.wpcf7-form input.btn, body.home section.get-in-touch form.wpcf7-form .wpcf7 input[type=submit], .wpcf7 body.home section.get-in-touch form.wpcf7-form input[type=submit] {
     margin-top: 4rem;
   }
 }
 
 html {
-  background-image: url("../img/particles.svg");
-  background-size: contain;
-  background-repeat: repeat;
+  background: #393939;
 }
 
 body {

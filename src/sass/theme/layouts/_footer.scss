@@ -1,34 +1,19 @@
 #wrapper-footer {
   background: $primary;
   color: $white;
-  padding: 3rem 0;
-
-  @include media-breakpoint-up(lg) {
-    padding: 4rem 0;
-  }
+  padding: 2rem 0;
 
   .return-to-top {
     display: flex;
     flex-direction: column;
     align-items: center;
+    a {
+      color: $white;
+    }
   }
 
   .site-info {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-
-    a {
-      color: $white; 
-
-      + span {
-        font-size: .85rem;
-      }
-    }
-
-    span.fa {
-      font-size: 2.5rem;
-    }
+    padding-top: 4rem;
+    text-align: center;
   }
 }

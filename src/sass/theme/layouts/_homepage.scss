@@ -68,14 +68,6 @@ header {
       @include media-breakpoint-up(lg) {
         font-size: 1.35rem;
       }
-
-      // .hero-content__subheading__divider-1 {
-      //   color: $yellow;
-      // }
-
-      // .hero-content__subheading__divider-2 {
-      //   color: $yellow;
-      // }
     }
   }
 }
@@ -241,24 +233,51 @@ body.home {
 
     &.get-in-touch {
       padding-bottom: 5rem;
+      @include media-breakpoint-up(lg) {
+        padding-bottom: 10rem;
+      }
       p {
         text-align: center;
+        &.thankyou {
+          color: $green;
+        }
       }
-      form.container {
-        padding-top: 1rem;
-        padding-bottom: 1rem;
+      form.wpcf7-form {
+        padding-left: 1rem;
+        padding-right: 1rem;
         @include medium-content;
 
-        @include media-breakpoint-up(lg) {
-          padding-top: 3rem;
+        p:first-of-type {
+          margin-bottom: 3rem;
         }
 
         label {
-          font-weight: 700;
+          text-align: left;
+          font-size: 1rem;
         }
 
-        button {
+        span.wpcf7-form-control-wrap {
+          margin-top: .25rem;
+          display: block;
+
+          .wpcf7-not-valid-tip {
+            padding-top: .25rem;
+          }
+        }
+
+        input.btn {
+          padding: .5rem 1rem;
+          font-size: 1.25rem;
+          background-color: $blue;
+          border: none;
+          color: $white;
           margin-top: 2rem;
+
+          &:hover {
+            color: #fff;
+            background-color: #024f8e;
+            border-color: #024a86;
+          }
           @include centered-content;
 
           @include media-breakpoint-up(lg) {

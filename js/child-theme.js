@@ -9296,21 +9296,6 @@
 	  }
 	})();
 
-	//smooth scroll
-	jQuery($ => {
-	  const speed = 1500;
-	  $('a[href*="#"]').filter((i, a) => a.getAttribute('href').startsWith('#') || a.href.startsWith(`${location.href}#`)).unbind('click.smoothScroll').bind('click.smoothScroll', event => {
-	    const targetId = event.currentTarget.getAttribute('href').split('#')[1];
-	    const targetElement = document.getElementById(targetId);
-
-	    if (targetElement) {
-	      event.preventDefault();
-	      $('html, body').animate({
-	        scrollTop: $(targetElement).offset().top
-	      }, speed);
-	    }
-	  });
-	});
 	/*! @license ScrollReveal v4.0.9
 
 		Copyright 2021 Fisssion LLC.
@@ -9322,7 +9307,6 @@
 		keep your source code private/proprietary by purchasing
 		a commercial license from https://scrollrevealjs.org/
 	*/
-
 	var ScrollReveal = function () {
 
 	  var r = {
@@ -10033,7 +10017,7 @@
 	  }), H(), H;
 	}();
 
-	ScrollReveal().reveal('.skills-services');
+	ScrollReveal().reveal('.reveal');
 
 	exports.Alert = alert;
 	exports.Button = button;
