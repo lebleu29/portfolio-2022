@@ -115,7 +115,7 @@ get_header(); ?>
             <p>Thank you for your message. I will be in touch soon.</p>
         </div> <?php
     } else { ?>
-        <form class="container" method="post">
+        <form class="container" action="/#contact" method="post">
             <div class="row">
                 <div class="col-md-6">
                     <div class="mb-3">
@@ -138,10 +138,6 @@ get_header(); ?>
         </form>
     <?php } ?>
     
-  </section>
-
-  <section class="top-of-page">
-
   </section>
 
 </main>
