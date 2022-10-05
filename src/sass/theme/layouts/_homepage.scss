@@ -23,7 +23,7 @@ header {
     }
 
     figure.hero-content__image {
-      svg {
+      img {
         width: 80px;
 
         @include media-breakpoint-up(md) {
@@ -117,65 +117,69 @@ body.home {
       h2 {
         margin-bottom: 5rem;
       }
-      .col-md-6,
-      .col {
-        display: flex;
-        justify-content: center;
+      .container {
+        overflow: clip;
 
-        .bubble {
-          position: relative;
-          padding: 4.5rem 2rem 2rem;
-          height: 100%;
-          overflow: visible;
+        .col-md-6,
+        .col {
+          display: flex;
+          justify-content: center;
 
-          &::after {
-            font-family: FontAwesome;
-            font-size: 1.85rem;
-            content: "";
-            position: absolute;
-            top: -1.75rem;
-            left: 50%;
-            transform: translateX(-50%);
-            height: 80px;
-            width: 80px;
-            border-radius: 100%;
-            border: 12px solid;
-            background: $white;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-          }
+          .bubble {
+            position: relative;
+            padding: 4.5rem 2rem 2rem;
+            height: 100%;
+            overflow: visible;
 
-          &.bubble--design-development {
             &::after {
-              content: "\f121";
-              border-color: $yellow;
-              color: $yellow;
+              font-family: FontAwesome;
+              font-size: 1.85rem;
+              content: "";
+              position: absolute;
+              top: -1.75rem;
+              left: 50%;
+              transform: translateX(-50%);
+              height: 80px;
+              width: 80px;
+              border-radius: 100%;
+              border: 12px solid;
+              background: $white;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
             }
-          }
 
-          &.bubble--seo-speed-optimization {
-            &::after {
-              content: "\f1de";
-              border-color: $orange;
-              color: $orange;
+            &.bubble--design-development {
+              &::after {
+                content: "\f121";
+                border-color: $yellow;
+                color: $yellow;
+              }
             }
-          }
 
-          &.bubble--maintenance-security {
-            &::after {
-              content: "\f023";
-              border-color: $red;
-              color: $red;
+            &.bubble--seo-speed-optimization {
+              &::after {
+                content: "\f1de";
+                border-color: $orange;
+                color: $orange;
+              }
             }
-          }
 
-          &.bubble--content-writing-strategy {
-            &::after {
-              content: "\f11c";
-              border-color: $green;
-              color: $green;
+            &.bubble--maintenance-security {
+              &::after {
+                content: "\f023";
+                border-color: $red;
+                color: $red;
+              }
+            }
+
+            &.bubble--content-writing-strategy {
+              &::after {
+                content: "\f11c";
+                border-color: $green;
+                color: $green;
+              }
             }
           }
         }

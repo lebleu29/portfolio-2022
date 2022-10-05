@@ -23,7 +23,7 @@
 @mixin rounded-box {
   border-radius: 20px;
   background: $white;
-  @include drop-shadow;
+  @include box-shadow;
 }
 
 @mixin centered-content {

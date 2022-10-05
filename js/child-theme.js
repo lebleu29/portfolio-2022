@@ -10015,9 +10015,15 @@
 	      return W = "boolean" == typeof e ? e : W;
 	    }
 	  }), H(), H;
-	}();
+	}(); // var fadeUp = {
+	// 	easing: 'ease-in',
+	// 	opacity: 0.2
+	// };
 
-	ScrollReveal().reveal('.reveal');
+
+	ScrollReveal().reveal('.reveal', {
+	  mobile: false
+	});
 
 	exports.Alert = alert;
 	exports.Button = button;

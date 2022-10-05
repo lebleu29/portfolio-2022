@@ -57,7 +57,7 @@ get_header(); ?>
 
   <section class="recent-work">
     <h2>Recent work</h2>
-    <div class="container">
+    <div class="container overflow-hidden">
       <?php
       $args = array(
           'post_type' => 'jetpack-portfolio',

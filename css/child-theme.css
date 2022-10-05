@@ -15596,7 +15596,7 @@ Files inside this folder should contain all styles relating to a reusable compon
 .bubble {
   border-radius: 20px;
   background: #fff;
-  filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.25));
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
 }
 .bubble.bubble--portfolio {
   transition: all 0.1s ease-in;
@@ -15704,16 +15704,16 @@ header .hero-content {
     padding-bottom: 10rem;
   }
 }
-header .hero-content figure.hero-content__image svg {
+header .hero-content figure.hero-content__image img {
   width: 80px;
 }
 @media (min-width: 768px) {
-  header .hero-content figure.hero-content__image svg {
+  header .hero-content figure.hero-content__image img {
     width: 110px;
   }
 }
 @media (min-width: 992px) {
-  header .hero-content figure.hero-content__image svg {
+  header .hero-content figure.hero-content__image img {
     width: 120px;
   }
 }
@@ -15802,20 +15802,23 @@ body.home section.hello p {
 body.home section.skills-services h2, body.home section.skills-services .h2 {
   margin-bottom: 5rem;
 }
-body.home section.skills-services .col-md-6,
-body.home section.skills-services .col {
+body.home section.skills-services .container {
+  overflow: clip;
+}
+body.home section.skills-services .container .col-md-6,
+body.home section.skills-services .container .col {
   display: flex;
   justify-content: center;
 }
-body.home section.skills-services .col-md-6 .bubble,
-body.home section.skills-services .col .bubble {
+body.home section.skills-services .container .col-md-6 .bubble,
+body.home section.skills-services .container .col .bubble {
   position: relative;
   padding: 4.5rem 2rem 2rem;
   height: 100%;
   overflow: visible;
 }
-body.home section.skills-services .col-md-6 .bubble::after,
-body.home section.skills-services .col .bubble::after {
+body.home section.skills-services .container .col-md-6 .bubble::after,
+body.home section.skills-services .container .col .bubble::after {
   font-family: FontAwesome;
   font-size: 1.85rem;
   content: "";
@@ -15833,26 +15836,26 @@ body.home section.skills-services .col .bubble::after {
   justify-content: center;
   align-items: center;
 }
-body.home section.skills-services .col-md-6 .bubble.bubble--design-development::after,
-body.home section.skills-services .col .bubble.bubble--design-development::after {
+body.home section.skills-services .container .col-md-6 .bubble.bubble--design-development::after,
+body.home section.skills-services .container .col .bubble.bubble--design-development::after {
   content: "\f121";
   border-color: #FDB82B;
   color: #FDB82B;
 }
-body.home section.skills-services .col-md-6 .bubble.bubble--seo-speed-optimization::after,
-body.home section.skills-services .col .bubble.bubble--seo-speed-optimization::after {
+body.home section.skills-services .container .col-md-6 .bubble.bubble--seo-speed-optimization::after,
+body.home section.skills-services .container .col .bubble.bubble--seo-speed-optimization::after {
   content: "\f1de";
   border-color: #D66905;
   color: #D66905;
 }
-body.home section.skills-services .col-md-6 .bubble.bubble--maintenance-security::after,
-body.home section.skills-services .col .bubble.bubble--maintenance-security::after {
+body.home section.skills-services .container .col-md-6 .bubble.bubble--maintenance-security::after,
+body.home section.skills-services .container .col .bubble.bubble--maintenance-security::after {
   content: "\f023";
   border-color: #A31616;
   color: #A31616;
 }
-body.home section.skills-services .col-md-6 .bubble.bubble--content-writing-strategy::after,
-body.home section.skills-services .col .bubble.bubble--content-writing-strategy::after {
+body.home section.skills-services .container .col-md-6 .bubble.bubble--content-writing-strategy::after,
+body.home section.skills-services .container .col .bubble.bubble--content-writing-strategy::after {
   content: "\f11c";
   border-color: #05761E;
   color: #05761E;
