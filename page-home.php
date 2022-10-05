@@ -18,7 +18,7 @@ get_header(); ?>
   <section class="skills-services">
     <h2>My skills and services</h2>
     <div class="container">
-      <div class="row g-5">
+      <div class="row">
         <div class="col-md-6">
           <div class="bubble bubble--design-development reveal">
             <h3>Design and development</h3>
@@ -57,7 +57,7 @@ get_header(); ?>
 
   <section class="recent-work">
     <h2>Recent work</h2>
-    <div class="container overflow-hidden">
+    <div class="container">
       <?php
       $args = array(
           'post_type' => 'jetpack-portfolio',
@@ -66,7 +66,7 @@ get_header(); ?>
       $the_query = new WP_Query( $args ); ?>
 
       <?php if ( $the_query->have_posts() ) : ?>
-          <div class="row g-5">
+          <div class="row">
             <?php while ( $the_query->have_posts() ) :    $the_query->the_post(); ?>
               <div class="col-lg-6 col-xl-4">
                 <a href="<?php the_permalink(); ?>" class="portfolio-link">

@@ -116,10 +116,14 @@ body.home {
     &.skills-services {
       h2 {
         margin-bottom: 5rem;
+        @include media-breakpoint-up(md) {
+          margin-bottom: 2rem;
+        }
+        @include media-breakpoint-up(lg) {
+          margin-bottom: 1rem;
+        }
       }
       .container {
-        overflow: clip;
-
         .col-md-6,
         .col {
           display: flex;
@@ -183,6 +187,20 @@ body.home {
             }
           }
         }
+        .col-md-6 {
+          @include media-breakpoint-up(md) {
+            padding-top: 3rem;
+          }
+          @include media-breakpoint-up(lg) {
+            padding-top: 4rem;
+          }
+          + .col-md-6 {
+            margin-top: 3rem;
+            @include media-breakpoint-up(md) {
+              margin-top: 0;
+            }
+          }
+        }
       }
     }
 
@@ -190,7 +208,6 @@ body.home {
       display: flex;
       flex-direction: column;
       align-items: center;
-      // background: #f1f2f3;
       background-image: url("../img/waves.svg");
       background-size: cover;
       margin-top: 5rem;
@@ -213,6 +230,9 @@ body.home {
 
       h2 {
         margin-bottom: 3rem;
+        @include media-breakpoint-up(xl) {
+          margin-bottom: 1rem;
+        }
       }
 
       .container {
@@ -222,16 +242,31 @@ body.home {
           @include wide-content;
         }
 
-        a.portfolio-link {
-          h3 {
-            color: $body-color;
-            margin-top: 1rem;
+        .col-lg-6.col-xl-4 {
+          @include media-breakpoint-up(xl) {
+            padding-top: 2rem;
+          }
+          a.portfolio-link {
+            h3 {
+              color: $body-color;
+              margin-top: 1rem;
+            }
+          }
+          + .col-lg-6.col-xl-4 {
+            margin-top: 2rem;
+            @include media-breakpoint-up(xl) {
+              margin-top: 0;
+            }
           }
         }
+
       }
 
       .btn {
         margin-top: 3rem;
+        @include media-breakpoint-up(xl) {
+          margin-top: 2rem;
+        }
       }
     }
 
